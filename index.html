@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Wycena kominka - Gwarancja niskich cen</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Posiadamy niezwykle szeroką ofertę producentów wkładów kominkowych takich jak Kratki, Defro czy Brunner oraz zapewniamy wycenę kominka dla naszych klientów. Oferujemy fachowe doradztwo oraz atrakcyjne ceny w oparciu o nasze doświadczenie rynkowe. Wyślij zapytanie i sprawdź."
+    />
+    <meta name="keywords" content="wycena kominka, kominki wycena, kominek wycena, kominki cena, kominki koszt, kominki brunner cena, kominki kratki cena, kominki defro cena" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hero-container">
+        <div class="element h1-slide">
+          <h1 class="top-title">Kominki <br /></h1>
+          <h1 class="left-title">w indywidualnych <br>cenach</h1>
+
+          <button type="button" class="btn-wrapper">
+            <span class="btn-interior">Wyceń kominek</span>
+          </button>
+        </div>
+        <div class="wave-wrapper">
+          <img src="img/wave.svg" class="wave" alt="section separator" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="process-section">
+        <div class="h2-wrapper">
+          <h2 class="section-header">Proces wyceny</h2>
+        </div>
+        <div class="boxes-wrapper">
+          <div class="left-side-box box">
+            <div class="img-container">
+              <img class="icon-img" src="img/list.png" alt="list image" />
+            </div>
+            <div class="h3-wrapper">
+              <h3 class="box-header">Wybór kominka z listy</h3>
+            </div>
+            <div class="paragraph-wrapper">
+              <p class="box-paragraph">
+                Aby uzyskać wycenę kominka, należy wybrać typ, producenta i model z listy rozwijanej poniżej.
+                Pozwoli to na szybkie odnalezienie wybranego wkładu.
+              </p>
+            </div>
+          </div>
+          <div class="dashed"></div>
+          <div class="box middle-box">
+            <div class="img-container">
+              <img class="icon-img" src="img/send.png" alt="sending icon" />
+            </div>
+            <div class="h3-wrapper">
+              <h3 class="box-header">Wysyłka zapytania</h3>
+            </div>
+            <div class="paragraph-wrapper">
+              <p class="box-paragraph">
+                Po potwierdzeniu wyboru należy uzupełnić adres e-mail oraz ewentualnie dodać własne uwagi w wiadomości wysyłanej do naszych doradców.
+                
+              </p>
+            </div>
+          </div>
+          <div class="dashed"></div>
+          <div class="right-side-box box">
+            <div class="img-container">
+              <img
+                class="icon-img"
+                src="img/alert.png"
+                alt="new message icon"
+              />
+            </div>
+            <div class="h3-wrapper">
+              <h3 class="box-header">Nasza odpowiedź z wyceną</h3>
+            </div>
+            <div class="paragraph-wrapper">
+              <p class="box-paragraph">
+                Po wysłaniu zapytania na e-mail podany w formularzu, zostanie przesłana nasza odpowiedź oraz indywidualna wycena.
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="mobile-valuation-section">
+        <div class="h2-wrapper h2-light" id="valuation-header">
+          <h2 class="section-header">Wybierz model i wyślij zapytanie</h2>
+        </div>
+        <div id="container"></div>
+        <div class="form-hidden fadeOut" id="form-wrapper">
+          <div class="form-label-wrapper">
+            <span id="form-label">Wypełnij by wysłać wiadomość:</span>
+          </div>
+        
+          <form class="" id="valuation-form" method="post" action="send.php">
+          
+          <div class="form-row">
+            <label class="form-label" for="email">Email</label>
+            <input
+              placeholder="you@example.pl"
+              type="email"
+              name="email"
+              required
+              id="email"
+              data-error-text="Wpisz poprawny email"
+            />
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="message">Treść wiadomości</label>
+            <textarea
+              placeholder="Proszę o wycenę..."
+              name="message"
+              required
+              data-error-text="Musisz wypełnić pole wiadomości"
+              id="message"
+            ></textarea>
+          </div>
+          <div class="form-row checkbox-container">
+            <input
+              type="checkbox"
+              name="checkbox"
+              required
+              data-error-text="Musisz wyrazić zgodę"
+              id="checkbox"
+            />
+            <label for="checkbox" id="checkbox-span"
+              >Akceptuję politykę prywatności</span
+            >
+          </div>
+          <div class="form-row-submit">
+            <button type="submit" class="submit-btn">
+              Wyślij
+            </button>
+          </div>
+        </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div id="footer-anchor-wrapper">
+          <a id="privacy-anchor" href="polityka-prywatnosci">Polityka prywatności</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module"src="script.js"></script>
+    <script src="validation.js"></script>
+    <script src="visual.js"></script>
+  </body>
+</html>
