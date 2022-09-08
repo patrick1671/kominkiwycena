@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $mail="qwertz157@wp.pl";
+    $mail="";
 
 
 
